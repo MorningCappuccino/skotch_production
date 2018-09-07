@@ -1,0 +1,72 @@
+.skotch-menu {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 40px;
+    align-items: center;
+    background: @white;
+
+    .logo {
+        height: 80px;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+
+            li {
+                // margin-right: 30px;
+                border-right: 1px solid #d8d8d8;
+                padding: 0 15px;
+
+                &:last-of-type {
+                    border-right: none;
+                }
+
+                a {
+                    color: @s-black;
+                    font-size: 20px;
+                    transition: ease .3s;
+                    border-bottom: 1px solid transparent;
+
+                    &:hover {
+                        border-color: @s-red;
+                    }
+                }
+            }
+        }
+    }
+
+    .social-links {
+        display: flex;
+        width: 151px; //like logo for align
+        justify-content: flex-end;
+
+        a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            margin-right: 20px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        .icon-youtube {
+            background-image: url('../img/youtube.svg');
+        }
+
+        .icon-instagram {
+            background-image: url('../img/instagram.svg');
+        }
+    }
+}

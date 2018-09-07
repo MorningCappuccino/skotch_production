@@ -100,7 +100,7 @@ gulp.task( 'serve', ['js:libs', 'css'], function() {
 	});
 
 	gulp.watch( 'less/*.less' , ['css']);
-    // gulp.watch( 'src/assets/js/*.js', [ 'dev:js' ] );
+    gulp.watch( 'js/*.js').on('change', browserSync.reload);
 	gulp.watch( '*.html' ).on('change', browserSync.reload);
 
 });
