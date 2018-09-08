@@ -8,29 +8,21 @@
         &.center-half-bot {
             background-position: center 75%;
         }
+
+        &.center-top {
+            background-position: center 20%;
+        }
     }
 
-    &-sign {
+    &-logo {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: @white;
-        text-transform: uppercase;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+        width: 400px;
 
-    &-brand {
-        font-size: 100px;
-        font-weight: bold;
-        letter-spacing: 0.3em;
-    }
-
-    &-prod {
-        font-size: 40px;
-        letter-spacing: 0.3em;
-        font-family: Arial;
+        img {
+            width: 100%;
+        }
     }
 }
