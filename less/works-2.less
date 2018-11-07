@@ -1,0 +1,68 @@
+.works-2 {
+    background: @light-gray;
+    padding: 30px 0;
+
+    &-wrap {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &-title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &-item {
+    	box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.35);
+    	width: 100%;
+    	height: 300px;
+    	display: block;
+    	margin-bottom: 30px;
+    	background-size: cover;
+    	background-repeat: no-repeat; 
+    	position: relative;
+
+    	&::before {
+    		content: '';
+    		display: block;
+    		// background: rgba(0,0,0,.3);
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		bottom: 0;
+    		right: 0;
+    		background: radial-gradient(white, black);
+    		opacity: 0.5;
+    		transition: all .3s;
+    	}
+
+    	&::after {
+    		content: '';
+    		display: block;
+			width: 50px;
+			height: 30px;
+			background: url('../img/youtube-red.svg') no-repeat;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+    	}
+
+    	&:hover {
+    		&::before {
+    			opacity: 0.3;
+    		}
+    	}
+
+    	&.fortex {
+    		background-image: url('../img/preview-fortex.png');
+    	}
+
+    	&.megabonus {
+    		background-image: url('../img/preview-megabonus.png');
+    		background-position: 50% -40px;
+    	}
+    }
+}
