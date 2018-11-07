@@ -14,6 +14,7 @@
     "gulp-sourcemaps": "^2.6.4"
   },
   "devDependencies": {
+    "gulp-sftp": "^0.1.5",
     "gulp-stylelint": "^7.0.0",
     "stylelint": "^9.5.0"
   },

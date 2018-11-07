@@ -17,6 +17,15 @@ var App = {
         }
 
         owl.owlCarousel(settings);
+    },
+    initPDCarousel: function() {
+        var owl = $('.pd-carousel');
+        var settings = {
+            items: 1,
+            loop: false
+        }
+
+        owl.owlCarousel(settings);
     }
 }
 

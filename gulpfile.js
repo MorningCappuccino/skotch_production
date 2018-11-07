@@ -11,6 +11,8 @@ var concat = require('gulp-concat'); // объединение набора фа
 
 var browserSync = require('browser-sync').create(); // обновление налету
 
+var sftp = require('gulp-sftp'); //Публикация SFTP
+
 // ================== LESS ============================
 // Библиотеки
 var libCSS = [
@@ -103,6 +105,19 @@ gulp.task( 'serve', ['js:libs', 'css'], function() {
     gulp.watch( 'js/*.js').on('change', browserSync.reload);
 	gulp.watch( '*.html' ).on('change', browserSync.reload);
 
+});
+
+// Публикация на prod
+gulp.task( 'prod', function(){
+
+	return gulp.src('+(css|fonts|img|js|index.html)')
+	.pipe(sftp({
+		host: 'ftp.gorgeousflowers.us',
+		user: 'vanilla@gorgeousflowers.us',
+		pass: 'Flowers47',
+		timeout: 30000,
+		remotePath: '/test/public/skotch/'
+	}));
 });
 
 gulp.task('default', ['serve']);

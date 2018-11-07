@@ -1,35 +1,35 @@
 @font-face {
-  font-family: 'Qanelas';
-  src: url('../fonts/Qanelas-Regular.woff2') format('woff2'), url('../fonts/Qanelas-Regular.woff') format('woff');
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Regular.woff2') format('woff2'), url('../fonts/Ubuntu-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Qanelas';
-  src: url('../fonts/Qanelas-Bold.woff2') format('woff2'), url('../fonts/Qanelas-Bold.woff') format('woff');
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Bold.woff2') format('woff2'), url('../fonts/Ubuntu-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Qanelas';
-  src: url('../fonts/Qanelas-Light.woff2') format('woff2'), url('../fonts/Qanelas-Light.woff') format('woff');
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Light.woff2') format('woff2'), url('../fonts/Ubuntu-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Qanelas';
-  src: url('../fonts/Qanelas-Medium.woff2') format('woff2'), url('../fonts/Qanelas-Medium.woff') format('woff');
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Medium.woff2') format('woff2'), url('../fonts/Ubuntu-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Qanelas';
-  src: url('../fonts/Qanelas-SemiBold.woff2') format('woff2'), url('../fonts/Qanelas-SemiBold.woff') format('woff');
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-SemiBold.woff2') format('woff2'), url('../fonts/Ubuntu-SemiBold.woff') format('woff');
   font-weight: 550;
   font-style: normal;
 }
 .skotch-wrap {
-  font-family: "Qanelas";
+  font-family: "Ubuntu";
 }
 .img-fluid {
   display: block;
@@ -234,6 +234,26 @@ a {
 }
 .contacts .year {
   text-align: center;
+}
+.pd-wrap {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.pd-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.pd-item {
+  -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.35);
+  margin: 20px;
+}
+.pd-item img {
+  width: 100%;
+  display: block;
 }
 
 /*# sourceMappingURL=app.css.map */

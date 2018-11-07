@@ -2,3 +2,4 @@ __source
 node_modules
 css/app*
 js/app.bundle.js
+*.zip
