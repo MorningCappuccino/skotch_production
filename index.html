@@ -12,7 +12,7 @@
     <div class="skotch-wrap">
 
         <!-- Main screen -->
-        <div class="main-screen">
+        <div class="main-screen" id="main-screen">
             <div class="main-screen-bg center-top" style="background-image: url('img/road.jpg')"></div>
             <div class="main-screen-logo">
                 <img src="img/logo-new.svg" alt="Skotch production logo">
@@ -21,38 +21,57 @@
 
         <!-- Menu -->
         <div class="skotch-menu">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="sign">
                 Skotch production
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Этапы производства</a></li>
-                    <li><a href="#">Наши работы</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#main-screen">Главная</a></li>
+                    <li><a href="#about-us">О нас</a></li>
+                    <li><a href="#pd">Этапы производства</a></li>
+                    <li><a href="#works-2">Наши работы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
             <div class="social-links">
                 <a target="_blank" href="https://www.youtube.com/channel/UCfUGwm_YEC2QAwyMN57eWoA" class="icon-youtube"></a>
-                <a target="_blank" href="https://www.instagram.com/skotch_production/" class="icon-instagram"></a>
+                <a target="_blank" href="https://www.instagram.com/skotch.production" class="icon-instagram"></a>
             </div>
         </div>
 
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-close"></div>
+            <nav>
+                <ul>
+                    <li><a href="#main-screen">Главная</a></li>
+                    <li><a href="#about-us">О нас</a></li>
+                    <li><a href="#pd">Этапы производства</a></li>
+                    <li><a href="#works-2">Наши работы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <!-- About us -->
-        <div class="about-us">
+        <div class="about-us" id="about-us">
             <div class="about-us-wrap">
                 <div class="about-us-title">
                     О нас
                 </div>
                 <div class="about-us-text">
-                    Продакшн-студия занимающаяся полным циклом видеопроизводства, начиная с&nbsp;разработки и&nbsp;написания сценария заканчивая постпродакшном ролика. Наш профиль&nbsp;&mdash; это создание презентационных, рекламных, игровых видеороликов, а&nbsp;так&nbsp;же съемка мероприятий и&nbsp;клипов. Если у&nbsp;вас имеются творческие идеи, которые вы&nbsp;хотите реализовать, но&nbsp;не&nbsp;знаете как, мы&nbsp;готовы их&nbsp;рассмотреть и&nbsp;помочь.
+                    Продакшн-студия, занимающаяся полным циклом видеопроизводства, начиная от&nbsp;разработки идеи и&nbsp;написания сценария, заканчивая постпродакшном ролика. Наш профиль&nbsp;&mdash; это создание презентационных, рекламных, игровых видеороликов, а&nbsp;так&nbsp;же съемка мероприятий. Если у&nbsp;вас имеются творческие идеи, которые вы&nbsp;хотите реализовать, но&nbsp;не&nbsp;знаете как, мы&nbsp;обязательно рассмотрим их&nbsp;и&nbsp;постараемся помочь.
                 </div>
             </div>
         </div>
 
         <!-- Step of production -->
-        <div class="pd">
+        <div class="pd" id="pd">
             <div class="pd-wrap">
                 <div class="pd-title">
                     Этапы производства
@@ -104,7 +123,7 @@
         </div> -->
 
         <!-- Works v2-->
-        <div class="works-2">
+        <div class="works-2" id="works-2">
             <div class="works-2-wrap">
                 <div class="works-2-title">
                     Наши работы
@@ -120,20 +139,20 @@
             </div>
         </div>
 
-        <div class="contacts">
+        <div class="contacts" id="contacts">
             <div class="contacts-wrap">
                 <div class="contacts-top">
                     <div class="contacts-left">
                         Беларусь, Минск <br>
-                        Unknown street, 666<br>
                         <a href="mailto:kotch.pd@gmail.com">skotch.pd@gmail.com</a>
                     </div>
                     <div class="contacts-right">
-                        + 375298942095<br>
-                        + 79263051820
+                        +375 (29) 894-20-95<br>
+                        <!-- + 79263051820 -->
+                        +375 (29) 562-43-90
                     </div>
                 </div>
-                <div class="year">© 2005–2018</div>
+                <div class="year">© by <a href="#">Skotch production</a></div>
             </div>
         </div>
 
