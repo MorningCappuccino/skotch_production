@@ -3,3 +3,4 @@ node_modules
 css/app*
 js/app.bundle.js
 *.zip
+package-lock.json
